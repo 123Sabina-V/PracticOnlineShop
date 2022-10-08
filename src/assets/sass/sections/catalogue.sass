@@ -1,0 +1,77 @@
+.catalogue
+    &__text
+        text-align: center
+        text-transform: none
+        margin: 15px 0px 5px 0px
+    &__size
+        &:nth-child(-n+5) 
+            margin-left: 5px
+    &__block
+        display: flex
+        &_size
+            display: flex
+            margin: 5px 0px 5px 0px
+            justify-content: center
+        &_product
+            display: flex
+            flex-direction: column
+            &:nth-child(-n+2) 
+                margin-right: 15px
+        &_color
+            display: flex
+            justify-content: center
+    &__title
+        text-align: left
+        margin-bottom: 10px
+    &__link
+        text-align: left
+        text-transform: none
+        color: #252525
+        margin-top: 20px
+    &__box
+        margin-left: 30px
+        &_item
+            display: flex
+    &__circle
+        width: 14px
+        height: 14px
+        margin-right: 5px
+        box-sizing: border-box
+        background: #FFFFFF
+        border-radius: 50%
+        border: 0.3px solid #252525
+        &-blue
+            margin-right: 5px
+            background: #6F83A4
+            width: 14px
+            height: 14px
+            box-sizing: border-box
+            border-radius: 50%
+        &-beige
+            background: #F1DDAA
+            width: 14px
+            height: 14px
+            box-sizing: border-box
+            border-radius: 50%
+    &__group
+        display: table-cell
+        text-transform: none
+    &__check
+        display: inline-block
+        width: 6px
+        height: 6px
+        border: solid #E0BEA2
+        border-width: 2px 0px 0px 2px
+        transform: rotate(227deg)
+        margin: 4px 10px 0px 11px
+        cursor: pointer
+    &__item
+        display: flex
+        margin: 0px 30px 30px 0px
+        cursor: pointer
+    &__items
+       display: none
+    // &__passive
+    //     display: none
+    // &__active
+    //     display: block

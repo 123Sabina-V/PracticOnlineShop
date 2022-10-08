@@ -1,0 +1,29 @@
+{
+  "products": [
+      {
+          "img": "parka.png",
+          "name": "Белая куртка",
+          "price": "2900 грн"
+      },
+      {
+          "img": "parka.png",
+          "name": "Белая куртка",
+          "price": "2900 грн"
+      },
+      {
+          "img": "parka.png",
+          "name": "Белая куртка",
+          "price": "2900 грн"
+      },
+      {
+          "img": "parka.png",
+          "name": "Белая куртка",
+          "price": "2900 грн"
+      },
+      {
+          "img": "parka.png",
+          "name": "Белая куртка",
+          "price": "2900 грн"
+      }
+  ]
+}
