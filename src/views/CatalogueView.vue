@@ -4,6 +4,7 @@
         <BreadScrumbs></BreadScrumbs>
         <Catalogue></Catalogue>
         <Footer></Footer>
+        <router-view></router-view>
     </div>
 </template>
 

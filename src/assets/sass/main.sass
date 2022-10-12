@@ -58,8 +58,22 @@ blockquote:before, blockquote:after,
 q:before, q:after 
     content: ''
     content: none
-
+a 
+    text-decoration: none
+   
 table 
     border-collapse: collapse
     border-spacing: 0
 
+
+@media (max-width: 1200px)
+    .container
+        padding: 0 100px
+
+@media (max-width: 992px)
+    .container
+        padding: 0 50px
+
+@media (max-width: 414px)
+    .container
+        padding: 0 20px

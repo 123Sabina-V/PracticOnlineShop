@@ -1,8 +1,108 @@
+.mobile
+    display: none
+.menu
+    display: none
+    height: 85px
+    width:100%
+    background: #9d9d9d
+    box-shadow: 0px 10px 15px rgba(37, 37, 37, 0.07)
+    z-index:9999
+    display:none
+    text-align:center
+    position: absolute
+    left: 0
+    top: 0
+    align-items: center
 .header
     background: url("../../img/background.png") no-repeat
     height: 900px
     padding-top: 24px
     background-size: 100%
+    background-size: cover
+    position: relative
+    
+    &__menu
+        cursor: pointer
+
+        &_mobile
+            display: none
+        &-burger
+            display: none
+            height: 85px
+            width:100%
+            background: #9d9d9d
+            box-shadow: 0px 10px 15px rgba(37, 37, 37, 0.07)
+            z-index:9999
+            display:none
+            text-align:center
+            position: absolute
+            left: 0
+            top: 0
+            align-items: center
+    &__span
+        &_cross
+            // margin-right: 107px
+            cursor: pointer
+        &-fourth
+            width: 34px
+            height: 4px
+            background: #FFFFFF
+            transform: rotate(45deg)
+            clear: left
+            float: left
+            margin-bottom: -12px
+            transition: all .2s
+        &-fives
+            width: 34px
+            height: 4px
+            background: #FFFFFF
+            transform: rotate(-45deg)
+            clear: left
+            float: left
+            margin-bottom: 6px
+            transition: all .2s
+
+        &-first
+            width: 34px
+            background: #FFFFFF
+            clear: left
+            float: left
+            height:  4px
+            margin-bottom: 6px
+            transition: all .2s
+            // &:last-child 
+            //     margin-bottom: 0
+        &-second
+            width: 26px
+            background: #FFFFFF
+            clear: left
+            float: left
+            height:  4px
+            margin-bottom: 6px
+            transition: all .2s
+        &-third
+            width: 18px
+            background: #FFFFFF
+            clear: left
+            float: left
+            height:  4px
+            // margin-bottom: 10px
+            transition: all .2s
+
+    &__box
+        display: flex
+        position: relative
+        width: 25px
+    &__length
+        position: absolute
+        top: -6px
+        right: -3px
+        color: #252525 !important
+        font-family: "Raleway-Bold",sans-serif
+        font-weight: 300
+        font-size: 18px
+        line-height: 21px
+        text-decoration: none
     &__link
         display: flex
         justify-content: space-between
@@ -13,11 +113,21 @@
         display: flex
         align-items: center
         justify-content: space-between
+        box-sizing: border-box
         &-second
             display: flex
             align-items: center
             justify-content: space-between
             margin-top: 25px
+        &-first
+            display: flex
+            align-items: center
+            justify-content: space-between
+    &__block
+        &_link
+            display: flex
+            flex-wrap: wrap
+            margin-left: 15px
     &__icon
         height: 25px
         cursor: pointer
@@ -27,3 +137,55 @@
             margin-right: 33px
         &:nth-child(3)
             margin-right: 30px
+
+@media (max-width: 1200px)
+    .mobile
+        display: flex
+    .desktop
+        display: none
+    .header
+        height: 600px
+        &__menu
+            &_desktop
+                display: none
+            &_mobile
+                display: flex
+        &__list
+            display: none
+        &__link
+            display: none
+
+@media (max-width: 793px)
+    .header
+        &__block
+            &_link
+                flex-direction: column
+        &__icon
+            &:nth-child(1)
+                margin-right: 0px
+            &-mobile
+                display: none
+
+@media (max-width: 575px)
+    .header
+        &__logo
+            height: 20px
+
+@media (max-width: 414px)
+    .header
+        background: url("../../img/background-mobile.png") no-repeat
+        background-size: cover
+        height: 667px
+        &__block
+            &_link
+                // display: none
+                display: flex
+                flex-direction: column
+        &__menu
+            &_mobile
+                display: grid
+            &_desktop
+                display: none
+            &-burger
+                height: 110px
+

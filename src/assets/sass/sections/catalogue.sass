@@ -1,4 +1,38 @@
 .catalogue
+    &__hide
+        display: none !important
+    &__button
+        display: flex
+        cursor: pointer
+        margin: 10px auto 30px auto
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 255px
+        height: 50px
+        background: #E0BEA2
+        border: none
+        font-family: "Raleway-Light"
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        text-transform: uppercase
+        color: #FFFFFF
+        &_favorites
+            cursor: pointer
+            position: absolute
+            padding: 13px
+            background: #E0BEA2
+            border-radius: 0px 0px 0px 20px
+            top: 0
+            right: 0
+        &_check
+            display: none
+    &__props
+        display: flex
+        justify-content: right
+        gap: 15px
+        flex-wrap: wrap
     &__text
         text-align: center
         text-transform: none
@@ -15,23 +49,28 @@
         &_product
             display: flex
             flex-direction: column
-            &:nth-child(-n+2) 
-                margin-right: 15px
+            
         &_color
             display: flex
             justify-content: center
+        &_img
+            position: relative
     &__title
         text-align: left
         margin-bottom: 10px
+        &-desktop
+            text-align: left
+            margin-bottom: 10px
     &__link
         text-align: left
         text-transform: none
         color: #252525
         margin-top: 20px
+        cursor: pointer
     &__box
         margin-left: 30px
         &_item
-            display: flex
+            display: flex-end
     &__circle
         width: 14px
         height: 14px
@@ -71,7 +110,68 @@
         cursor: pointer
     &__items
        display: none
+    &__order
+        display: flex
+        justify-content: flex-end
+        margin: 15px 0px
     // &__passive
     //     display: none
     // &__active
     //     display: block
+
+@media (max-width: 839px)
+    .catalogue
+        &__img
+            width: 165px
+            &_icon
+                width: 13px
+        &__button
+            width: 160px
+            height: 40px
+            margin: 0px auto 15px auto
+            &_favorites
+                padding: 10px
+@media (max-width: 575px)
+    .catalogue
+        &__props
+            justify-content: left
+            margin-top: 15px
+        &__title
+            &-desktop
+                display: none
+        &__button
+            font-size: 14px
+            line-height: 16px
+            margin-top: 15px
+            &_check
+                display: flex
+                background: #E0BEA2
+                padding: 9px
+                align-items: center
+                
+        &__check
+            display: inline-block
+            width: 6px
+            height: 6px
+            border: solid #FFF
+            border-width: 2px 0px 0px 2px
+            margin: 0px 10px 0px 11px
+            
+
+        &__title
+            margin-bottom: 0px
+            color: #fff
+        &__block
+            flex-direction: column
+            &_link
+                display: none
+                flex-direction: column
+                background: #e0bea2
+        &__link
+            margin-bottom: 10px
+            margin-top: 10px
+            color: #ffff
+@media (max-width: 414px)
+    .catalogue
+        &__img
+            width: 159px

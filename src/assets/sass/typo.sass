@@ -1,5 +1,5 @@
 .link-type-first
-    font-family: "Raleway-Light",sans-serif
+    font-family: "Raleway-Light"
     font-weight: 300
     font-size: 18px
     line-height: 21px
@@ -10,11 +10,11 @@
     &:nth-child(1)
         margin-right: 25px
     &-black
-        color: black !important
+        color: #252525 !important
 
 .title-type
     &-first
-        font-family: "Raleway-Light",sans-serif
+        font-family: "Raleway-Light"
         font-weight: 300
         font-size: 46px
         line-height: 54px
@@ -22,13 +22,13 @@
         color: #FFFFFF
         opacity: 0.85
     &-second
-        font-family: "Raleway-Light",sans-serif
+        font-family: "Raleway-Light"
         font-weight: 300
         font-size: 36px
         line-height: 42px
         color: #252525
     &-third
-        font-family: "Raleway-Light",sans-serif
+        font-family: "Raleway-Light"
         font-weight: 300
         font-size: 20px
         line-height: 23px
@@ -36,7 +36,7 @@
         display: block
 .subtitle-type
     &-first
-        font-family: "Raleway-Light",sans-serif
+        font-family: "Raleway-Light"
         font-weight: 300
         font-size: 16px
         line-height: 19px
@@ -47,7 +47,7 @@
         margin-left: auto
         margin-right: auto 
         &-black
-            font-family: "Raleway-Light",sans-serif
+            font-family: "Raleway-Light"
             font-weight: 300
             font-size: 16px
             line-height: 19px
@@ -63,9 +63,63 @@
         text-align: center
         color: #252525
 
-.text-type-first
-    font-family: "Raleway-Bold"
-    font-size: 16px
-    line-height: 19px
-    text-align: center
-    color: #252525
+.text-type
+    &-first
+        font-family: "Raleway-Bold"
+        font-size: 16px
+        line-height: 19px
+        text-align: center
+        color: #252525
+    &-second
+        font-family: "Raleway-Light" 
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 16px
+        color: #E0BEA2
+        &-black
+            color: #252525
+            font-family: "Raleway-Light" 
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 16px
+            text-align: left
+    &-third
+        font-family: "Raleway-Light"
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #252525
+
+
+@media (max-width: 575px)
+    .title-type
+        &-first
+            font-size: 32px
+            line-height: 37px
+        &-second
+            font-size: 24px
+            line-height: 28px
+        &-third
+            font-size: 18px
+            line-height: 21px
+    .subtitle-type
+        &-first
+            font-size: 14px
+            line-height: 16px
+            &-black
+                font-size: 14px
+                line-height: 16px
+        &-second
+            font-size: 14px
+            line-height: 16px
+    .text-type
+        &-first
+            font-size: 14px
+            line-height: 16px
+        &-second
+            &-black
+                font-size: 12px
+                line-height: 14px

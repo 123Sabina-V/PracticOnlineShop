@@ -1,0 +1,55 @@
+.product
+    &__img
+        height: 100px
+        width: 100px
+        margin-bottom: 10px
+        margin-right: 10px
+        &-big
+            width: 450px
+            height: 540px
+    &__block
+        display: flex
+        &_img
+            display: flex
+            justify-content: left
+            flex-direction: column
+        &_text
+            margin-left: 50px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+    &__price
+        margin: 20px 0px 
+        text-align: left
+    &__text
+        margin: 20px 0px
+
+@media (max-width: 1100px)
+    .product
+        &__img
+            &-big
+                margin-bottom: 10px
+        &__block
+            flex-direction: column
+            &_text
+                margin-left: 0px
+            &_img
+                justify-content: left
+                flex-direction: unset
+
+@media (max-width: 675px)
+    .product
+        &__text
+            margin: 15px 0px
+        &__button
+            width: 160px
+            height: 40px
+        &__price
+            margin: 15px 0px
+        &__img
+            height: 63px
+            width: 63px
+            margin-right: 5px
+            &-big
+                height: auto
+                width: 100%
